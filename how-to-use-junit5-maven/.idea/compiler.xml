@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="how-to-use-junit-maven" />
+        <module name="how-to-use-junit5-maven" />
       </profile>
     </annotationProcessing>
   </component>
