@@ -6,9 +6,10 @@ import java.util.Optional;
 import java.util.function.Predicate;
 import java.util.function.ToIntFunction;
 
-import static java.time.Duration.between;
-
-public class Main {
+/**
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
+public class StudyJavaSE8NewFeatures {
 
     public static void main(String[] args) {
         // x holds value : int
@@ -48,8 +49,8 @@ public class Main {
 
         // Java 8 : Date&Time API
         LocalDate localDate = LocalDate.of(1973, Month.JULY, 11);
-        LocalTime localTime = LocalTime.of(10,16);
-        LocalDateTime birth = LocalDateTime.of(localDate,localTime);
+        LocalTime localTime = LocalTime.of(10, 16);
+        LocalDateTime birth = LocalDateTime.of(localDate, localTime);
         ZonedDateTime now = ZonedDateTime.now();
         Period period = Period.ofMonths(3); //  Date
         Duration duration; // Time
@@ -57,7 +58,7 @@ public class Main {
         Instant t1 = Instant.now();
         // code runs....
         Instant t2 = Instant.now();
-        System.out.println(Duration.between(t1,t2).toMillis());
+        System.out.println(Duration.between(t1, t2).toMillis());
 
         // Optional
         var fullname = A.findFullname();
@@ -66,7 +67,7 @@ public class Main {
 }
 
 class A {
-    public static Optional<String> findFullname(){
+    public static Optional<String> findFullname() {
         return Optional.of("Jack Bauer");
     }
 }
@@ -78,6 +79,9 @@ interface MyFunc { // function interface : SAM
     int fn(int x);
 }
 
+/**
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 interface BusinessService {
     public static final double PI = 3.1415;
 
