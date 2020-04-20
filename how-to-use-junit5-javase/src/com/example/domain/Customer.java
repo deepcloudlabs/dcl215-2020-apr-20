@@ -1,5 +1,8 @@
 package com.example.domain;
 
+/**
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 // CUT : Class Under Test
 // White-box Testing
 public class Customer {

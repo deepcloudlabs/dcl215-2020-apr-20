@@ -2,8 +2,9 @@ package com.example.domain;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 class CustomerTest {
 
     @Test
