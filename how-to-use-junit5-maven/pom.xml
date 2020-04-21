@@ -65,6 +65,9 @@
                 <plugin>
                   <artifactId>maven-surefire-plugin</artifactId>
                   <version>2.22.1</version>
+                  <configuration>
+                      <excludedGroups>stress</excludedGroups>
+                  </configuration>
                 </plugin>
                 <plugin>
                   <artifactId>maven-jar-plugin</artifactId>
