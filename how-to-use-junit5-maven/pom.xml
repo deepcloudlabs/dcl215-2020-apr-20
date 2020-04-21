@@ -40,6 +40,11 @@
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junit.jupiter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>${junit.jupiter.version}</version>
             <scope>test</scope>
@@ -65,9 +70,11 @@
                 <plugin>
                   <artifactId>maven-surefire-plugin</artifactId>
                   <version>2.22.1</version>
+                    <!--
                   <configuration>
                       <excludedGroups>stress</excludedGroups>
                   </configuration>
+                  -->
                 </plugin>
                 <plugin>
                   <artifactId>maven-jar-plugin</artifactId>

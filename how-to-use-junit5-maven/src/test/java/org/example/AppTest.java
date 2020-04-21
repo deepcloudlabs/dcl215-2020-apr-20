@@ -7,6 +7,9 @@ import org.example.tags.Stress;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -45,5 +48,12 @@ public class AppTest {
     @Performance
     void test3(){
         System.err.println("test 3");
+    }
+
+    @Test
+    //@Timeout(unit = TimeUnit.MILLISECONDS,value = 10) // 5 seconds
+    @Timeout(5) // 5 seconds
+    void test4() throws InterruptedException {
+        TimeUnit.HOURS.sleep(1);
     }
 }
