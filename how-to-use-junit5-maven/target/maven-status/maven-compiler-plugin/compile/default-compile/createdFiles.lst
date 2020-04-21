@@ -1,1 +1,5 @@
 org\example\App.class
+org\example\tags\Load.class
+org\example\tags\Functional.class
+org\example\tags\Performance.class
+org\example\tags\Stress.class

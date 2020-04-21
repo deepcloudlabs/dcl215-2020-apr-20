@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="164150bf-b737-41ba-8870-dac7ae5d9e2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-banking/core-banking.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-banking/src/com/example/banking/core/domain/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-banking/src/com/example/banking/core/domain/Currency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-banking/src/com/example/banking/core/domain/CurrencyEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-banking/src/com/example/banking/core/domain/InsufficientBalanceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-banking/test/com/example/banking/core/domain/AccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/surefire-reports/TEST-org.example.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/surefire-reports/TEST-org.example.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/surefire-reports/org.example.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/surefire-reports/org.example.AppTest.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1aqbiJZnx8ol4NCEZ58i719SKk0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/core-banking/src" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.47816092" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.banking.core.domain" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core-banking" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.banking.core.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.banking.core.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.example.banking.core.domain.AccountTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AccountTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="164150bf-b737-41ba-8870-dac7ae5d9e2b" name="Default Changelist" comment="" />
+      <created>1587466196223</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587466196223</updated>
+      <workItem from="1587466201842" duration="6172000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1480" y="-989" key="#Project_Structure" timestamp="1587469608241">
+      <screen x="-1920" y="-1083" width="1920" height="1040" />
+    </state>
+    <state x="-1480" y="-989" key="#Project_Structure/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587469608241" />
+    <state width="1877" height="313" key="GridCell.Tab.0.bottom" timestamp="1587472270447">
+      <screen x="-1920" y="-1083" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587472270447" />
+    <state width="1877" height="313" key="GridCell.Tab.0.center" timestamp="1587472270440">
+      <screen x="-1920" y="-1083" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="313" key="GridCell.Tab.0.center/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587472270440" />
+    <state width="1877" height="313" key="GridCell.Tab.0.left" timestamp="1587472270439">
+      <screen x="-1920" y="-1083" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="313" key="GridCell.Tab.0.left/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587472270439" />
+    <state width="1877" height="313" key="GridCell.Tab.0.right" timestamp="1587472270442">
+      <screen x="-1920" y="-1083" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="313" key="GridCell.Tab.0.right/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587472270442" />
+    <state x="-1144" y="-786" key="chooseDestDirectoryDialog" timestamp="1587467105288">
+      <screen x="-1920" y="-1083" width="1920" height="1040" />
+    </state>
+    <state x="-1144" y="-786" key="chooseDestDirectoryDialog/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587467105288" />
+    <state x="-1256" y="-672" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587466989851">
+      <screen x="-1920" y="-1083" width="1920" height="1040" />
+    </state>
+    <state x="-1256" y="-672" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587466989851" />
+    <state x="-1578" y="-943" key="new project wizard" timestamp="1587466273398">
+      <screen x="-1920" y="-1083" width="1920" height="1040" />
+    </state>
+    <state x="-1578" y="-943" key="new project wizard/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587466273398" />
+  </component>
+</project>
