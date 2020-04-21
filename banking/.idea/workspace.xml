@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="164150bf-b737-41ba-8870-dac7ae5d9e2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-banking/core-banking.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-banking/src/com/example/banking/core/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-banking/src/com/example/banking/core/domain/Currency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-banking/src/com/example/banking/core/domain/CurrencyEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-banking/src/com/example/banking/core/domain/InsufficientBalanceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-banking/test/com/example/banking/core/domain/AccountTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/surefire-reports/TEST-org.example.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/surefire-reports/TEST-org.example.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/surefire-reports/org.example.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../how-to-use-junit5-maven/target/surefire-reports/org.example.AppTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-banking/src/com/example/banking/core/domain/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-banking/src/com/example/banking/core/domain/TcKimlikNo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-banking/test/com/example/banking/core/domain/CustomerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +58,7 @@
       <recent name="com.example.banking.core.domain" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CustomerTest">
     <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core-banking" />
       <extension name="coverage">
@@ -89,6 +75,22 @@
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CustomerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core-banking" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.banking.core.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.banking.core.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.example.banking.core.domain.CustomerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
@@ -98,6 +100,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerTest" />
         <item itemvalue="JUnit.AccountTest" />
       </list>
     </recent_temporary>
@@ -112,37 +115,61 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587466196223</updated>
-      <workItem from="1587466201842" duration="6172000" />
+      <workItem from="1587466201842" duration="9958000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1587472409970</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587472409970</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1480" y="-989" key="#Project_Structure" timestamp="1587469608241">
       <screen x="-1920" y="-1083" width="1920" height="1040" />
     </state>
     <state x="-1480" y="-989" key="#Project_Structure/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587469608241" />
-    <state width="1877" height="313" key="GridCell.Tab.0.bottom" timestamp="1587472270447">
+    <state x="-1155" y="-848" key="#com.intellij.ide.util.MemberChooser" timestamp="1587474529007">
       <screen x="-1920" y="-1083" width="1920" height="1040" />
     </state>
-    <state width="1877" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587472270447" />
-    <state width="1877" height="313" key="GridCell.Tab.0.center" timestamp="1587472270440">
+    <state x="-1155" y="-848" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587474529007" />
+    <state x="-1352" y="-995" key="CommitChangelistDialog2" timestamp="1587472408274">
       <screen x="-1920" y="-1083" width="1920" height="1040" />
     </state>
-    <state width="1877" height="313" key="GridCell.Tab.0.center/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587472270440" />
-    <state width="1877" height="313" key="GridCell.Tab.0.left" timestamp="1587472270439">
+    <state x="-1352" y="-995" key="CommitChangelistDialog2/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587472408274" />
+    <state width="1877" height="313" key="GridCell.Tab.0.bottom" timestamp="1587475707686">
       <screen x="-1920" y="-1083" width="1920" height="1040" />
     </state>
-    <state width="1877" height="313" key="GridCell.Tab.0.left/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587472270439" />
-    <state width="1877" height="313" key="GridCell.Tab.0.right" timestamp="1587472270442">
+    <state width="1877" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587475707686" />
+    <state width="1877" height="313" key="GridCell.Tab.0.center" timestamp="1587475707686">
       <screen x="-1920" y="-1083" width="1920" height="1040" />
     </state>
-    <state width="1877" height="313" key="GridCell.Tab.0.right/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587472270442" />
+    <state width="1877" height="313" key="GridCell.Tab.0.center/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587475707686" />
+    <state width="1877" height="313" key="GridCell.Tab.0.left" timestamp="1587475707685">
+      <screen x="-1920" y="-1083" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="313" key="GridCell.Tab.0.left/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587475707685" />
+    <state width="1877" height="313" key="GridCell.Tab.0.right" timestamp="1587475707686">
+      <screen x="-1920" y="-1083" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="313" key="GridCell.Tab.0.right/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587475707686" />
+    <state x="-1368" y="-831" key="Vcs.Push.Dialog.v2" timestamp="1587472412082">
+      <screen x="-1920" y="-1083" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="-831" key="Vcs.Push.Dialog.v2/0.0.1920.1040/0.-1080.1920.1040/-1920.-1083.1920.1040@-1920.-1083.1920.1040" timestamp="1587472412082" />
     <state x="-1144" y="-786" key="chooseDestDirectoryDialog" timestamp="1587467105288">
       <screen x="-1920" y="-1083" width="1920" height="1040" />
     </state>
