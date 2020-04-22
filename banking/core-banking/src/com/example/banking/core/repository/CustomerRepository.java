@@ -5,8 +5,9 @@ import com.example.banking.core.domain.TcKimlikNo;
 
 import java.util.Optional;
 
+// SPI : Service Provider Interface
 public interface CustomerRepository {
     Optional<Customer> findCustomerByIdentity(TcKimlikNo identity);
 
-    default void saveCustomer(Customer cust){}
+    default boolean saveCustomer(Customer cust){ return true;}
 }

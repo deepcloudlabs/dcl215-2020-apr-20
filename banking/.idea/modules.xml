@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/banking.iml" filepath="$PROJECT_DIR$/banking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/banking-rest-api/banking-rest-api.iml" filepath="$PROJECT_DIR$/banking-rest-api/banking-rest-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-banking/core-banking.iml" filepath="$PROJECT_DIR$/core-banking/core-banking.iml" />
     </modules>
   </component>

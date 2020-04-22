@@ -8,7 +8,7 @@ import com.example.banking.core.repository.CustomerRepository;
 
 import java.util.Optional;
 
-public class CustomerApplication {
+public class CustomerApplication implements CustomerApplicationIncomingPort {
     private CustomerRepository customerRepository;
 
     public CustomerApplication(CustomerRepository customerRepository) {
@@ -16,6 +16,7 @@ public class CustomerApplication {
     }
 
     // user story
+    @Override
     public boolean transferBetweenAccounts(TcKimlikNo identity, String fromIban, String toIban, Currency currency) {
         Optional<Customer> customer = customerRepository.findCustomerByIdentity(identity);
         if(customer.isPresent()){
