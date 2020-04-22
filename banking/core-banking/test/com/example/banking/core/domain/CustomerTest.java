@@ -41,10 +41,10 @@ public class CustomerTest {
         @Test
         @DisplayName("find account by iban")
         void removeAccountFromCustomer() {
-            Customer customer = new Customer(TcKimlikNo.of("1"), "Jack Bauer");
+            var customer = new Customer(TcKimlikNo.of("1"), "Jack Bauer");
             customer.addAccount(new Account("TR1", new Currency(1_000, CurrencyEnum.TL)));
             assertEquals(1, customer.getAccounts().size());
-            Optional<Object> account = customer.findAccountByIban("TR1");
+            var account = customer.findAccountByIban("TR1");
             assertTrue(account.isPresent());
             assertEquals(new Account("TR1", new Currency(1_000, CurrencyEnum.TL)), account.get());
         }

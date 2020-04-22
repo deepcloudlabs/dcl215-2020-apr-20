@@ -35,5 +35,6 @@ public record Currency(double amount, CurrencyEnum currency) {
         result = 31 * result + (currency != null ? currency.hashCode() : 0);
         return result;
     }
+
 }
 */

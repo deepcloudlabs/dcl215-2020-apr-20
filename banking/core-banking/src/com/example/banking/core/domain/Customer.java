@@ -39,7 +39,7 @@ public class Customer { // Bounded Context
         accounts.put(account.getIban(), account);
     }
 
-    public Optional<Object> findAccountByIban(String iban) {
+    public Optional<Account> findAccountByIban(String iban) {
         return Optional.ofNullable(accounts.get(iban));
     }
 }
