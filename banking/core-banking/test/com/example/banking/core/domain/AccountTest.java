@@ -8,6 +8,9 @@ import org.junit.jupiter.params.provider.EnumSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 @DisplayName("An account")
 public class AccountTest {
 
@@ -53,6 +56,7 @@ public class AccountTest {
         }
 
     }
+
     @Nested
     @DisplayName("withdraw")
     class Withdraw {
@@ -61,14 +65,14 @@ public class AccountTest {
         void withdrawOverBalanceShouldThrowInsufficientBalanceException() {
             Account acc = new Account("TR1", new Currency(1_000, CurrencyEnum.TL));
             assertAll(
-                  () -> assertThrows(InsufficientBalanceException.class, () -> acc.withdraw(new Currency(1_001, CurrencyEnum.TL))),
-                  () -> assertEquals(new Currency(1_000, CurrencyEnum.TL), acc.getBalance())
+                    () -> assertThrows(InsufficientBalanceException.class, () -> acc.withdraw(new Currency(1_001, CurrencyEnum.TL))),
+                    () -> assertEquals(new Currency(1_000, CurrencyEnum.TL), acc.getBalance())
             );
         }
 
         @Test
         @DisplayName("all balance should be successful")
-        void withdrawAllBalanceShouldBeOk() throws Throwable{
+        void withdrawAllBalanceShouldBeOk() throws Throwable {
             Account acc = new Account("TR1", new Currency(1_000, CurrencyEnum.TL));
             acc.withdraw(new Currency(1_000, CurrencyEnum.TL));
             assertEquals(new Currency(0, CurrencyEnum.TL), acc.getBalance());

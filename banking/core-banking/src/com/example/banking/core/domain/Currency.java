@@ -1,7 +1,11 @@
 package com.example.banking.core.domain;
 
+/**
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 // Value class -> No identity -> immutable
-public record Currency(double amount,CurrencyEnum currency){}
+public record Currency(double amount, CurrencyEnum currency) {
+}
 /* public final class Currency {
     private final double amount;
     private final CurrencyEnum currency;

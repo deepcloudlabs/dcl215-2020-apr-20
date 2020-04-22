@@ -4,10 +4,14 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertAll;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
+/**
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 @DisplayName("A customer")
 public class CustomerTest {
     @Test
@@ -31,7 +35,18 @@ public class CustomerTest {
         void addAccountToCustomer() {
             Customer customer = new Customer(TcKimlikNo.of("1"), "Jack Bauer");
             customer.addAccount(new Account("TR1", new Currency(1_000, CurrencyEnum.TL)));
-            assertEquals(1,customer.getAccounts().size());
+            assertEquals(1, customer.getAccounts().size());
+        }
+
+        @Test
+        @DisplayName("find account by iban")
+        void removeAccountFromCustomer() {
+            Customer customer = new Customer(TcKimlikNo.of("1"), "Jack Bauer");
+            customer.addAccount(new Account("TR1", new Currency(1_000, CurrencyEnum.TL)));
+            assertEquals(1, customer.getAccounts().size());
+            Optional<Object> account = customer.findAccountByIban("TR1");
+            assertTrue(account.isPresent());
+            assertEquals(new Account("TR1", new Currency(1_000, CurrencyEnum.TL)), account.get());
         }
     }
 }

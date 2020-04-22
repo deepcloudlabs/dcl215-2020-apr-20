@@ -1,5 +1,8 @@
 package com.example.banking.core.domain;
 
+/**
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 // DDD : Value Class -> Immutable -> Validation
 public final class TcKimlikNo {
     private final String value;
@@ -12,14 +15,17 @@ public final class TcKimlikNo {
         return value;
     }
 
-    public static TcKimlikNo of(String value){
+    public static TcKimlikNo of(String value) {
         // validation
         if (validate(value))
             return new TcKimlikNo(value);
         throw new IllegalArgumentException("This is not a valid identity");
     }
 
-    public static boolean validate(String value){ return true; }
+    public static boolean validate(String value) {
+        return true;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

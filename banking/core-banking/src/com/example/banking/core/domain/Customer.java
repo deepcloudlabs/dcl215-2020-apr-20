@@ -1,9 +1,14 @@
 package com.example.banking.core.domain;
 
-import java.awt.datatransfer.SystemFlavorMap;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
+/**
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 // Event Storming -> Domain, Ubiquties Language, Bounded Context, Aggregate
 
 // Aggregate -> Root Entity -> Identity
@@ -11,7 +16,7 @@ import java.util.stream.Collectors;
 public class Customer { // Bounded Context
     private final TcKimlikNo identity; // tc kimlik no
     private final String fullName;
-    private Map<String,Account> accounts = new HashMap<>();
+    private Map<String, Account> accounts = new HashMap<>();
 
     public Customer(TcKimlikNo identity, String fullName) {
         this.identity = identity;
@@ -31,6 +36,10 @@ public class Customer { // Bounded Context
     }
 
     public void addAccount(Account account) {
-        accounts.put(account.getIban(),account);
+        accounts.put(account.getIban(), account);
+    }
+
+    public Optional<Object> findAccountByIban(String iban) {
+        return Optional.ofNullable(accounts.get(iban));
     }
 }
