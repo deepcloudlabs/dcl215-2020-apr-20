@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 public class Customer { // Bounded Context
     private final TcKimlikNo identity; // tc kimlik no
     private final String fullName;
-    private Map<String, Account> accounts = new HashMap<>();
+    private Map<Iban, Account> accounts = new HashMap<>();
 
     public Customer(TcKimlikNo identity, String fullName) {
         this.identity = identity;
@@ -39,7 +39,7 @@ public class Customer { // Bounded Context
         accounts.put(account.getIban(), account);
     }
 
-    public Optional<Account> findAccountByIban(String iban) {
+    public Optional<Account> findAccountByIban(Iban iban) {
         return Optional.ofNullable(accounts.get(iban));
     }
 }

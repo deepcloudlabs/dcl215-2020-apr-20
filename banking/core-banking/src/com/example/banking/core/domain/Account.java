@@ -1,19 +1,21 @@
 package com.example.banking.core.domain;
 
+import java.util.Objects;
+
 /**
  * @author Binnur Kurt <binnur.kurt@gmail.com>
  */
 // entity -> identity -> iban
 public class Account {
-    private final String iban;
+    private final Iban iban;
     private Currency balance; // value object
 
-    public Account(String iban, Currency balance) {
+    public Account(Iban iban, Currency balance) {
         this.iban = iban;
         this.balance = balance;
     }
 
-    public String getIban() {
+    public Iban getIban() {
         return iban;
     }
 
@@ -21,25 +23,22 @@ public class Account {
         return balance;
     }
 
-    public void deposit(Currency currency) {
-        if (currency.currency() != this.balance.currency())
+    public void deposit(Currency money) {
+        if (money.currency() != this.balance.currency())
             throw new IllegalArgumentException("Currency should be equal!");
-        if (currency.amount() <= 0.)
+        if (money.amount() <= 0.)
             throw new IllegalArgumentException("Currency amount must be positive!");
-        this.balance = new Currency(
-                this.balance.amount() + currency.amount(),
-                this.balance.currency());
+        this.balance = this.balance.plus(money);
     }
 
-    public void withdraw(Currency currency) throws InsufficientBalanceException {
-        if (currency.currency() != this.balance.currency())
+    public void withdraw(Currency money) throws InsufficientBalanceException {
+        if (money.currency() != this.balance.currency())
             throw new IllegalArgumentException("Currency should be equal!");
-        if (currency.amount() <= 0.)
+        if (money.amount() <= 0.)
             throw new IllegalArgumentException("Currency amount must be positive!");
-        if (currency.amount() > this.balance.amount())
-            throw new InsufficientBalanceException();
-        this.balance = new Currency(this.balance.amount() - currency.amount(),
-                this.balance.currency());
+        if (money.amount() > this.balance.amount())
+            throw new InsufficientBalanceException("Your balance does not cover your expenses", balance.amount() - money.amount());
+        this.balance = this.balance.minus(money);
     }
 
     @Override
@@ -49,7 +48,7 @@ public class Account {
 
         Account account = (Account) o;
 
-        return iban != null ? iban.equals(account.iban) : account.iban == null;
+        return Objects.equals(iban, account.iban);
     }
 
     @Override

@@ -8,12 +8,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+/**
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 // Fake Object
 public class InMemoryCustomerRepository implements CustomerRepository {
     private Map<TcKimlikNo,Customer> customers = new HashMap<>();
 
     public InMemoryCustomerRepository() {
-
     }
 
     @Override

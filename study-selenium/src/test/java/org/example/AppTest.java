@@ -19,7 +19,7 @@ public class AppTest {
 
     @BeforeEach
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "c:/DEVEL/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "c:/opt/chromedriver.exe");
         driver = new ChromeDriver();
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();

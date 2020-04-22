@@ -1,9 +1,6 @@
 package com.example.banking.core.application;
 
-import com.example.banking.core.domain.Account;
-import com.example.banking.core.domain.Currency;
-import com.example.banking.core.domain.Customer;
-import com.example.banking.core.domain.TcKimlikNo;
+import com.example.banking.core.domain.*;
 import com.example.banking.core.repository.CustomerRepository;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -26,8 +23,8 @@ public class CustomerApplicationTest {
         // Setup
         TcKimlikNo identity = TcKimlikNo.of("1");
         Customer customer = new Customer(identity, "Jack Bauer");
-        Account fromAccount = new Account("TR1", new Currency(2_000, TL));
-        Account toAccount = new Account("TR2", new Currency(1_000, TL));
+        Account fromAccount = new Account(Iban.of("TR1"), new Currency(2_000, TL));
+        Account toAccount = new Account(Iban.of("TR2"), new Currency(1_000, TL));
         customer.addAccount(fromAccount);
         customer.addAccount(toAccount);
         // Test Doubles

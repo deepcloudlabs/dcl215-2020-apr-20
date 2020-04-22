@@ -5,6 +5,19 @@ package com.example.banking.core.domain;
  */
 // Value class -> No identity -> immutable
 public record Currency(double amount, CurrencyEnum currency) {
+    public Currency minus(Currency right) {
+        requireSameCurrency(right);
+        return new Currency(amount - right.amount, currency);
+    }
+
+    public Currency plus(Currency right) {
+        requireSameCurrency(right);
+        return new Currency(amount + right.amount, currency);
+    }
+
+    private void requireSameCurrency(Currency right) {
+        if (currency != right.currency) throw new IllegalArgumentException("Cannot minus different currencies.");
+    }
 }
 /* public final class Currency {
     private final double amount;

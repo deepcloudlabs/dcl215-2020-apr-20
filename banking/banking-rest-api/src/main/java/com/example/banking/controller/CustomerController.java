@@ -5,6 +5,7 @@ import com.example.banking.core.domain.Currency;
 import com.example.banking.core.domain.CurrencyEnum;
 import com.example.banking.core.domain.TcKimlikNo;
 import com.example.banking.request.TransferRequest;
+import com.example.banking.response.TransferResponse;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.annotation.RequestScope;
 
@@ -20,11 +21,14 @@ public class CustomerController {
     }
 
     @PostMapping
-    public void transfer(@RequestBody TransferRequest request){
-        incomingPort.transferBetweenAccounts(
+    public TransferResponse transfer(@RequestBody TransferRequest request){
+        boolean result = incomingPort.transferBetweenAccounts(
                 TcKimlikNo.of(request.getIdentity()),
                 request.getFromIban(),
                 request.getToIban(),
                 new Currency(request.getAmount(), CurrencyEnum.TL));
+        if (result)
+            return new TransferResponse("Ok");
+        return new TransferResponse("failed");
     }
 }
