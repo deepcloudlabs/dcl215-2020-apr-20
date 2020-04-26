@@ -25,21 +25,21 @@ import static org.junit.jupiter.api.Assertions.*;
 @ExtendWith({SpringExtension.class})
 public class CustomerRepositoryTest {
     @Autowired // CUT
-    CustomerService customerSrv;
+            CustomerService customerSrv;
     @Autowired
     MongoTemplate mongoTemplate;
 
     @BeforeEach
     void createTestCustomer() {
         Customer customer = new Customer(TcKimlikNo.of("1"), "Jack Bauer");
-        customer.addAccount(new Account("TR1", new Currency(1_000, CurrencyEnum.TL)));
+        customer.addAccount(new Account(Iban.of("TR440006218919446459437384"), new Currency(1_000, CurrencyEnum.TL)));
         mongoTemplate.save(customer);
     }
 
     @Test
     void findCustomerByIdentityShouldReturnOne() {
         // exercise
-        TcKimlikNo identity = TcKimlikNo.of("1");
+        TcKimlikNo identity = TcKimlikNo.of("41541519156");
         var customer = customerSrv.findCustomerByIdentity(identity);
         // verification
         assertAll(
@@ -51,7 +51,7 @@ public class CustomerRepositoryTest {
     @Test
     void findCustomerByIdentityShouldReturnEmpty() {
         // exercise
-        TcKimlikNo identity = TcKimlikNo.of("2");
+        TcKimlikNo identity = TcKimlikNo.of("65177521970");
         var customer = customerSrv.findCustomerByIdentity(identity);
         // verification
         assertFalse(customer.isPresent());

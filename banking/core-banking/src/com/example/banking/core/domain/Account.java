@@ -55,4 +55,12 @@ public class Account {
     public int hashCode() {
         return iban != null ? iban.hashCode() : 0;
     }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "iban=" + iban +
+                ", balance=" + balance +
+                '}';
+    }
 }
